@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
+</head>
+ <body>
+    <div class="main">
+        <div class="sidebar">
+            <div id="navbar">
+                <div class="nav-option" style="opacity:1; font-weight: 700 ;">
+                    <i class="fa-brands fa-spotify"></i>
+                    <a href="#" style="font-weight: 700;">Spotify</a>
+                </div>
+                <div class="nav-option"style="opacity:1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="https://open.spotify.com/search">Search</a>
+                </div>
+            </div>
+            <div class="library ">
+                <div class="options">
+                    <div class="lib-option nav-option"> 
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library </a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="boxs">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy,we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="boxs">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes<p>
+                        <button class="badge">Browse podcasts</button> 
+                    </div>
+                </div>
+                <div  style="margin-top: 2rem; " class="extra">
+                    <span >Legal</span>
+                    <span >Safety & Privacy Center</span>
+                    <span >Privacy Policy</span>
+                    <span >Cookies</span>
+                    <span >About Ads</span>
+                    <span >Accessibility</span>
+                    <br>
+                    <span>Cookies</span>
+                    <br><br><br>
+                    <button class="lang" style="background-color:#121212; color:rgba(255, 255, 255, 1); border:1px solid rgba(255, 255, 255, 1) ;" ><i class="fa-solid fa-globe"></i> English</button> 
+                </div>
+            </div>  
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge hide nav-item">Explore Premium</button> 
+                    <button class="badge nav-item" style="background-color: black; color:white"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button> 
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+                
+            </div>
+            <div class="title">
+                <a href="#" ><h1>Popular artists</h1></a>
+                <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C"  style=" padding-top: 2rem; padding-right:6rem; opacity: 0.5;">Show all</a>
+            </div>
+            
+            <div class="ArtistCards-container">
+                <div class="cardArtist">
+                    <img src="./Artists/pritam.jpg" class="artist-img">
+                    <img src="Artists/play.png" class="play">
+                    <p class="card-title">Pritam</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="cardArtist">
+                    <img src="./Artists/arjitSingh.jpg" class="artist-img">
+                    <img src="Artists/play.png" class="play">
+                    <p class="card-title">Arijit Singh</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="cardArtist">
+                    <img src="./Artists/arRahman.jpg" class="artist-img">
+                    <img src="Artists/play.png" class="play">
+                    <p class="card-title">A.R.Rahman</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="cardArtist">
+                    <img src="./Artists/nova.jpg" class="artist-img">
+                    <img src="Artists/play.png" class="play">
+                    <p class="card-title">Iqlipse Nova</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="cardArtist">
+                    <img src="./Artists/sachin jigar.jpg" class="artist-img">
+                    <img src="Artists/play.png" class="play">
+                    <p class="card-title">Sachin-Jigar</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="cardArtist">
+                    <img src="./Artists/badshah" class="artist-img">
+                    <img src="Artists/play.png" class="play">
+                    <p class="card-title">Badshah</p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+
+
+            <div class="title">
+                <a href="#"><h1>Popular albums</h1></a>
+                <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B" style=" padding-top: 2rem; padding-right:6rem; opacity: 0.5;">Show all</a>
+            </div>
+            <div class="cards-container"> 
+                <div class="card">
+                    <img src="./Artists/Mr._&_Mrs._Mahi_poster.jpg" class="card-img">
+                    <p class="card-title">Mr. And Mrs.Mahi</p>
+                    <p class="card-info">Tanishk Bagchi,Vishal Mishra,Jaani</p>
+                </div>
+                
+                
+                <div class="card">
+                    <img src="./Artists/animal.jpg" class="card-img">
+                    <p class="card-title">ANIMAL</p>
+                    <p class="card-info">Manan Bharadwaj,Vishal Mishra,Jaani</p>
+                </div>
+                
+                
+                <div class="card">
+                    <img src="./Artists/images.jpg" class="card-img">
+                    <p class="card-title">Suniyan Suniyan</p>
+                    <p class="card-info">Juss,MixSingh</p>
+                </div>
+                
+                <div class="card">
+                    <img src="./Artists/yjhd.avif" class="card-img">
+                    <p class="card-title">Yeh Jawaani Hai Deewani</p>
+                    <p class="card-info">Pritam</p>
+                </div>
+                    
+                    
+                <div class="card">
+                    <img src="./Artists/stree.jpg" class="card-img">
+                    <p class="card-title">Stree 2</p>
+                    <p class="card-info">Sachin-Jigar,Amitabh Bhattacharya</p>
+                </div>
+                    
+                    
+                <div class="card">
+                    <img src="./Artists/raja.jpg" class="card-img">
+                    <p class="card-title">Ek Tha Raja</p>
+                    <p class="card-info">Badshah</p>
+                </div>
+            </div>    
+
+
+            <div class="title">
+                <a href="#"><h1>Popular radio</h1></a>
+                <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu4h" style=" padding-top: 2rem; padding-right:6rem; opacity: 0.5;">Show all</a>
+            </div>
+            <div class="rest"> 
+                <div class="box">
+                    <img src="./radio/arjit" class="cards-img">
+                    <p class="card-info">With Neha Kakkar,Pritam,KK and...</p>
+                </div>
+                
+                
+                <div class="box">
+                    <img src="./radio/ii" class="cards-img">
+                    <p class="card-info">With S.Janaki,S.P. Balasubrahmanya...</p>
+                </div>
+                
+                
+                <div class="box">
+                    <img src="./radio/shreya" class="cards-img">
+                    <p class="card-info">With Sonu Nigam,Sunidhi Chauhan,...</p>
+                </div>
+                
+                <div class="box">
+                    <img src="./radio/diljit" class="cards-img">
+                    <p class="card-info">With Garry Sandhu,Ranjit Bawa,...</p>
+                </div>
+                    
+                    
+                <div class="box">
+                    <img src="./radio/ar" class="cards-img">
+                    <p class="card-info">With Shankar Mahadevan,...</p>
+                </div>
+                    
+                    
+                <div class="box">
+                    <img src="./radio/sanu" class="cards-img">
+                    <p class="card-info">With Udit Narayan,Alka Yagnik,...</p>
+                </div>
+            </div>    
+            
+
+            <div class="title">
+                <a href="#"><h1>Featured Charts</h1></a>
+            </div>
+            <div class="rest"> 
+                <div class="box">
+                    <img src="charts/card1.jpeg" class="cards-img">
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                
+                
+                <div class="box">
+                    <img src="./charts/card2.jpg" class="cards-img">
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                
+                
+                <div class="box">
+                    <img src="./charts/card3.jpeg" class="cards-img">
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                
+                <div class="box">
+                    <img src="./charts/card4.jpg" class="cards-img">
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                    
+                    
+                <div class="box">
+                    <img src="./charts/card5.jpg" class="cards-img">
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                    
+                    
+                <div class="box">
+                    <img src="./charts/card6.jpg" class="cards-img">
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+            </div>   
+            
+            <div class="title">
+                <a href="#"><h1>Spotify Playlists</h1></a>
+                <a href="https://open.spotify.com/section/0JQ5DAuChZYPe9iDhh2mJz" style=" padding-top: 2rem; padding-right:6rem; opacity: 0.5;">Show all</a>
+            </div>
+            <div class="rest"> 
+                <div class="box">
+                    <img src="./playlist/party.jpg" class="cards-img">
+                    <p class="card-info">A mix of biggest pop,dance and...</p>
+                </div>
+                
+                
+                <div class="box">
+                    <img src="./playlist/hits.jpg" class="cards-img">
+                    <p class="card-info">Kick back to the best new and...</p>
+                </div>
+                
+                
+                <div class="box">
+                    <img src="./playlist/throwback.jpg" class="cards-img">
+                    <p class="card-info">Here it is,the playlist for the...</p>
+                </div>
+                
+                <div class="box">
+                    <img src="./playlist/chillhop.jpg" class="cards-img">
+                    <p class="card-info">Blissed out beats and head nodding...</p>
+                </div>
+                    
+                    
+                <div class="box">
+                    <img src="./playlist/lofi.jpg" class="cards-img">
+                    <p class="card-info">A selection of lofi,chillhop and...</p>
+                </div>
+                    
+                    
+                <div class="box">
+                    <img src="./playlist/chillout.jpg" class="cards-img">
+                    <p class="card-info">Best mix collection for Relaxation,...</p>
+                </div>
+            </div> 
+            
+            <div class="title">
+                <a href="#"><h1>Trending Episodes</h1></a>
+                <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu8o" style=" padding-top: 2rem; padding-right:6rem; opacity: 0.5;">Show all</a>
+            </div>
+            <div class="cards-container"> 
+                <div class="card">
+                    <img src="episodes/balaji.jpg" class="card-img">
+                    <p class="card-title">Welcome back,RJ Balaji-...</p>
+                    <p class="card-info">July 2021 • 15 min</p>
+                </div>
+                
+                
+                <div class="card">
+                    <img src="./episodes/rotten.jpg" class="card-img">
+                    <p class="card-title">#73:Hotel of Horrors(Serial...</p>
+                    <p class="card-info">Jun 2021 • 93 min </p>
+                </div>
+                
+                
+                <div class="card">
+                    <img src="./episodes/a.jpg" class="card-img">
+                    <p class="card-title">Anubis:God of Death-Part2</p>
+                    <p class="card-info">Jun 2021 • 16 min</p>
+                </div>
+                
+                <div class="card">
+                    <img src="./episodes/mahabharat.jpg" class="card-img">
+                    <p class="card-title">Mahabharata Episode 1-...</p>
+                    <p class="card-info">April 2014 • 24 min</p>
+                </div>
+                    
+                    
+                <div class="card">
+                    <img src="./episodes/ghalib.jpg" class="card-img">
+                    <p class="card-title">Ep8-Ye Na Thi Hamari Qismat</p>
+                    <p class="card-info">Aug 2022 • 3 min</p>
+                </div>
+                    
+                    
+                <div class="card">
+                    <img src="./episodes/aastha.jpg" class="card-img">
+                    <p class="card-title">Asatha Povathu Yaru|Madurai...</p>
+                    <p class="card-info">May 2021 • 11 min</p>
+                </div>
+            </div> 
+            
+            <div class="footer">
+                <ul><a style="font-weight: 900;" href="#">Company</a>
+                    <br><br>
+                    <li>About</li>
+                    <li>Jobs</li>
+                    <li>For the Record</li>
+                </ul>
+                <ul><a style="font-weight: 900;" href="#">Communities</a>
+                    <br><br>
+                    <li>For Artists</li>
+                    <li>Developers</li>
+                    <li>Advertising</li>
+                    <li>Investors</li>
+                    <li>Vendors</li>
+                </ul>
+                <ul><a style="font-weight: 900;" href="#">Useful Links</a>
+                    <br><br>
+                    <li>Support</li>
+                    <li>Free Mobile App</li>
+                </ul>
+                <ul><a style="font-weight: 900;" href="#">Spotify Plans</a>
+                    <br><br>
+                    <li>Premium Individual</li>
+                    <li>Premium Duo</li>
+                    <li>Premium Family</li>
+                    <li>Premium Student</li>
+                    <li>Spotify Free</li>
+                </ul>
+
+                <div class="social_media"><i class="fa-brands fa-instagram"></i></div>
+                <div class="social_media"><i class="fa-brands fa-twitter"></i></div>
+                <div class="social_media"> <i class="fa-brands fa-facebook"></i></div>
+            </div>
+
+            <div class="line"><h5>&copy; 2024 Spotify AB</h5></div>
+        </div>   
+        
+        
+        <div class="music-player">
+            <div class="album">
+                   <img src="HW Assets/khwab.jpg" style="height: 4rem;">
+                   <a href="#" style="margin-top: 0.5rem; margin-left:0.5rem;">Khwab</a>
+                   <a href="#" style="margin-top: 1.75rem; margin-left: -3.75rem;">Iqlipse Nova,Aditya A</a>
+                   <img src="HW Assets/album_icon1.png" style="height:1.75rem; margin-top:0.75rem; margin-left:0.75rem;">
+                   <img src="HW Assets/album_icon2.png" style="height:2.5rem; margin-top: 0.5rem; margin-left:0.75rem">
+               </div>
+               
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-controls-icon">
+                    <img src="./assets/player_icon2.png" class="player-controls-icon">
+                    <!-- <img src="./assets/player_icon3.png" class="player-controls-icon" style="opacity: 1; height: 2rem;"> -->
+                    <img id="playPause" src="./assets/player_icon3.png" class="player-controls-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-controls-icon">
+                    <img src="./assets/player_icon5.png" class="player-controls-icon"> 
+                </div>
+                
+                <div class="playback-bar">
+                    00:00
+                    <input type="range" step="1" value="0" class="progress-bar" id="progressBar">
+                    03:10
+
+                </div>
+            </div>
+            
+            <div class="controls">
+                <img src="HW Assets/controls_icon1.png" class="five" style="height: 3rem; ">
+                <img src="HW Assets/controls_icon2.png" class="five" style="height: 3rem; margin-left: 0.75rem;">
+                <img src="HW Assets/controls_icon3.png" class="five" style="height: 1.5rem; margin-top: 0.75rem; margin-left: 0.75rem; opacity: 0.7;">
+                <img src="HW Assets/controls_icon4.png" class="five" style="height: 1.5rem; margin-top: 0.75rem; margin-left: 0.75rem; opacity: 0.7;">
+                <img src="HW Assets/controls_icon5.png" class="five" style="height: 3rem; margin-left: 0.75rem;">
+                <input type="range" class="bar">
+        </div>
+        <!-- Audio tag at the bottom -->
+        <audio id="audioPlayer" src="songs/khwab.mp3"></audio>
+       
+
+
+        <!-- Control buttons -->
+        <!-- <img id="prev" src="./assets/player_icon1.png" class="player-controls-icon">
+        <img id="playPause" src="./assets/player_icon3.png" class="player-controls-icon" style="height:2rem;">
+        <img id="next" src="./assets/player_icon5.png" class="player-controls-icon"> -->
+
+
+
+        <script src="script.js"></script>
+
+    
+</body>
+</html>
